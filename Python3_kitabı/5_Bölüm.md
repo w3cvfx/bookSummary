@@ -5,80 +5,87 @@
  ___) |
 |____/
 ```
-# <span style="color:red;font-weight:bold;">5.Bölüm</span>
+# <span style="color:red;">5.Bölüm</span>
 
-* <span style="color:blue">**interactive shell**</span> (etkileşimli kabuk)
-	* çıkmak için:
-	```python
-	>>> quit();
-	>>> import sys; sys.exit();
-	```
-	* __*son işlem*__ _
+## <span style="color:green;font-weight:bold;">İnteractive Shell</span>
+### çıkmak:
+```python
+>>> quit();
+>>> import sys; sys.exit();
+```
+### son işlem
+```python
+>>> _
+```
 * **parametre**: fonksiyonların parantezleri içinde belirtilen değerlerdir.
 
-* **Veri tipi sorgulamak**:
+## <span style="color:green;font-weight:bold;">Functions</span>
+* **type()** verinin tipi.
+* **len()** verinin uzunluğu.
+
+## <span style="color:green;font-weight:bold;">String</span>
+### birleşme
+* **+** kullanmadan birleşebiliriz.
+
 ```python
->>> type("string")
+>>> "ben " + "insanım"
+>>> "ben " "insanım"
+```
+### tekrarlama:
+```python
+>>> "w" * 3
+```
+## <span style="color:green;">Number</span>
+
+* **öncelik sırası** geçerlidir.
+
+### Tipler
+* **int**      : 2     
+* **float**    : 2.3   
+* **comples**  : 10+2j
+
+### Kuvvet/Power
+* kare bulmak için değeri kendisiyle çarpıyoruz.
+```python
+>>> x * x
 ```
 
-* **String**
-    * *birleştirmek*
-    ```python
-    >>> "ben " + "insanım"
-    >>> "ben " "insanım"
-    ```
-    * *Tekrarlamak*
-    ```python
-    >>> "w" * 3
-    ```
-* **Number**
-	* **öncelik sırası** kurallını
-geçerlidir.
-	* kare bulmak için değeri kendisiyle çarpıyoruz.
-	```python
-	>>> kare * kare
-	>>> a * a * ...
-	```
-	* 2     : *int*
-	* 2.3   : *float*
-	* 10+2j : *complex*
-	* **Power** *(kuvvet)*
-	1. **
-	```python
-	>>> 12 ** 2
-	144
-	```
-	* pow
-	```python
-	>>> pow(12, 2, 2)
-	```
-	> 144 sayısına böl, bölme işleminin kalanı 0'dır. yani 144 sayısı 2'ye tam bölünür.
-
-
-* **String uzunluğu**
+#### ** işleci
 ```python
-len("Muhammed")
+>>> 12 ** 2
+```
+#### pow()
+```python
+>>> pow(12, 2, 2)
+```
+* 3. parametre sonucuyla böler.
+
+
+## <span style="color:green;">Variables</span>
+* harf veya **_** işaretiyle başlamalı
+* türkçe kullanabiliriz.
+* adı kısa ve betimleyici olmalı
+
+### yasaklı kelimeler
+```python
+>>> import keyword
+>>> keyword.kwlist
 ```
 
-* **Variables**
-	* harf veya **_** işaretiyle başlamalı
-	* türkçe kullanabiliriz.
-	* yasaklı kelimeler
-	```python
-	>>> import keyword
-	>>> keyword.kwlist
-	```
-	* dilin fonksiyon adları kullanırsak o fonksiyon çalışmaz.
-		* *geri*:
-		```python
-		>>> del type
-		```
-	* adı kısa ve betimleyici olmalı
-	* **aynı** değere sahip değişkenler
+### dilin fonksiyon adları kullanırsak o fonksiyon çalışmaz.
+* *geri*:
+
+```python
+>>> del type
+```
+
+### aynı değer
+
 ```python
 >>> a=b=7
 ```
-* **Takas Etme**
+
+### Takas Etme
 ```python
 x, y = y, x
 ```
