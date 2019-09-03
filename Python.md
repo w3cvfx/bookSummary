@@ -43,16 +43,16 @@ geçerlidir.
 	* 2.3   : *float*
 	* 10+2j : *complex*
 	* **Power**
-	* **
-	```python
-	>>> 12 ** 2
-	144
-	```
-	* pow
-	```python
-	>>> pow(12, 2, 2)
-	```
-	> 144 sayısına böl, bölme işleminin kalanı 0'dır. yani 144 sayısı 2'ye tam bölünür.
+		* **
+		```python
+		>>> 12 ** 2
+		144
+		```
+		* pow
+		```python
+		>>> pow(12, 2, 2)
+		```
+		> 144 sayısına böl, bölme işleminin kalanı 0'dır. yani 144 sayısı 2'ye tam bölünür.
 
 
 * **String uzunluğu**
