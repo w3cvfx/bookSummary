@@ -30,7 +30,36 @@
     ```python
     >>> "w" * 3
     ```
-* Number
+* **Number**
 	* 2     : *int*
 	* 2.3   : *float*
 	* 10+2j : *complex*
+
+* **String uzunluğu**
+```python
+len("Muhammed")
+```
+
+* **Variables**
+	* harf veya **_** işaretiyle başlamalı
+	* türkçe kullanabiliriz.
+	* yasaklı kelimeler
+	```python
+	>>> import keyword
+	>>> keyword.kwlist
+	```
+	* dilin fonksiyon adları kullanırsak o fonksiyon çalışmaz.
+		* *geri*:
+		```python
+		>>> del type
+		```
+	* adı kısa ve betimleyici olmalı
+	* **aynı** değere sahip değişkenler
+```python
+>>> a=b=7
+```
+* Takas Etme 
+```python
+x, y = y, x
+```
+
