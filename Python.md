@@ -5,7 +5,7 @@
  ___) |
 |____/
 ```
-# <span style="color:red;font-weight:bold;">5.Bölüm</span>
+# 5.Bölüm</span>
 
 * <span style="color:blue">**interactive shell**</span> (etkileşimli kabuk)
 	* çıkmak için:
@@ -42,7 +42,7 @@ geçerlidir.
 	* 2     : *int*
 	* 2.3   : *float*
 	* 10+2j : *complex*
-	* **Power** *(kuvvet)*
+	* **Power**
 	* **
 	```python
 	>>> 12 ** 2
